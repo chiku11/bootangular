@@ -2,6 +2,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">{{name | uppercase}}</div>
     <div class="panel-body">
-      The {{name | lowercase}} is {{data | prettyprint}}
+      The {{name | lowercase}} is
+      <span [innerHTML]="data | prettyprint"></span>
     </div>
   </div>

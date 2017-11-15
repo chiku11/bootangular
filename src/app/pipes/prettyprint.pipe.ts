@@ -11,8 +11,8 @@ export class PrettyprintPipe implements PipeTransform {
 
     let tokens = JSON.stringify(value).
     replace(`{`,``)
-    .replace(`}`,``).split(`,`);
-    let modified ='';
+    .replace(`}`,``).replace(`":"`,` `).split(`,`);
+    let modified ='<br/>';
     tokens.forEach(token =>{
       modified = `${modified+token} <br/> `; 
     })
