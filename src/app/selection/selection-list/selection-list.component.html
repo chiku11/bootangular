@@ -1,0 +1,13 @@
+<div class="table">
+  <th> selection</th>
+  <tr *ngFor="let selection of selectionList">
+    <td><a [routerLink]="[{outlets:{right:['service',selection.serviceName]}}]">{{selection.serviceName}}</a></td>
+  </tr>
+</div>
+
+<!-- <div class="table">
+    <th> selection</th>
+    <tr *ngFor="let selection of selectionList">
+      <td><a [routerLink]="[{outlets:{right:['service']}}]">{{selection.serviceName}}</a></td>
+    </tr>
+  </div> -->

@@ -1,0 +1,14 @@
+ [
+      {
+       "serviceName":"weather",
+       "serviceUri":"goToUrl"   
+      },
+      {
+        "serviceName":"stock",
+        "serviceUri":"goToUrl"   
+       },
+       {
+        "serviceName":"latestFeeds",
+        "serviceUri":"goToUrl"   
+       }
+  ]
