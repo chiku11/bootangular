@@ -1,13 +1,14 @@
-<div class="table">
-  <th> selection</th>
-  <tr *ngFor="let selection of selectionList">
-    <td><a [routerLink]="[{outlets:{right:['service',selection.serviceName]}}]">{{selection.serviceName}}</a></td>
-  </tr>
-</div>
-
-<!-- <div class="table">
-    <th> selection</th>
-    <tr *ngFor="let selection of selectionList">
-      <td><a [routerLink]="[{outlets:{right:['service']}}]">{{selection.serviceName}}</a></td>
+<table class="table table-hover table-striped table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" > selection</th>
     </tr>
-  </div> -->
+  </thead>
+  <tbody>
+    <tr *ngFor="let selection of selectionList">
+      <td>
+        <a [routerLink]="[{outlets:{right:['service',selection.serviceName,selection.serviceUri]}}]">{{selection.serviceName}}</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

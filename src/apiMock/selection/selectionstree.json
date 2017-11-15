@@ -10,5 +10,10 @@
        {
         "serviceName":"latestFeeds",
         "serviceUri":"goToUrl"   
+       },
+       {
+         "serviceName":"location",
+         "serviceUri":"https://ipinfo.io/"
        }
+
   ]
